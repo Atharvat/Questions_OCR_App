@@ -34,8 +34,8 @@ class UploadImageTask extends AsyncTask<UploadImageTask.UploadParams, Void, Uplo
             Request request = new Request.Builder()
                     .url("https://api.mathpix.com/v3/text")
                     .addHeader("content-type", "application/json")
-                    .addHeader("app_id", "tagalpallewaratharva_gmail_com")
-                    .addHeader("app_key", "a2afbffa96489c23b815")
+                    .addHeader("app_id", "Enter your api id")
+                    .addHeader("app_key", "Enter your api key")
                     .post(requestBody)
                     .build();
             Response response = client.newCall(request).execute();
